@@ -727,9 +727,19 @@ html.lenis {
   -webkit-transition: all .4s ease-in .8s;
   -o-transition: all .4s ease-in .8s;
   transition: all .4s ease-in .8s;
-/*  cursor: url(../images/icon/cross-out.html),*/
-    pointer;
   z-index: 999;
+}
+
+.bg1 {
+  background: url(../img/slider.jpg);
+}
+
+.bg2 {
+  background: url(../img/slider-2.jpg);
+}
+
+.bg3 {
+  background: url(../img/slider-3.jpg);
 }
 
 .xs-sidebar-group.isActive .xs-overlay {
