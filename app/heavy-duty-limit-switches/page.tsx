@@ -1,12 +1,12 @@
 import React from 'react'
 
 const page = () => {
-  const pageContent = `
-  <section class="page-header">
+    const pageContent = `
+    <section class="page-header">
   <div class="page-header__bg" style="background-image: url(/assets/img/slider.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
   <div class="container">
     <div class="page-header__inner">
-      <h2>Flow-measurement</h2>
+      <h2>Heavy-Duty-limit-switches</h2>
       <div class="thm-breadcrumb__box">
         <ul class="thm-breadcrumb list-unstyled">
           <li>
@@ -19,11 +19,11 @@ const page = () => {
           <li>
             <span class="icon-angle-left"></span>
           </li>
-          <li>Sensors & Transmitters</li>
+          <li>Switches</li>
           <li>
             <span class="icon-angle-left"></span>
           </li>
-          <li>Flow-measurement</li>
+          <li>Heavy-Duty-limit-switches</li>
         </ul>
       </div>
     </div>
@@ -37,32 +37,47 @@ const page = () => {
           <div class="blog-details__left">
             <div class="blog-details__img-box">
               <div class="blog-details__img">
-                <img src="/assets/img/flow-measurement.jpg" class="img-thumbnail img-fluid" alt="">
+                <img src="/assets/img/heavy-duty-limit-switches.jpg" class="img-thumbnail img-fluid" alt="">
               </div>
             </div>
             <div class="blog-details__content">
-              <h3 class="blog-details__title-1">Flow-measurement</h3>
-              <p class="blog-details__text-1">Our range of flow sensors and switches provides reliable and effective measurements for both conductive and non-conductive fluids, as well as gases.</p>
-              <p class="blog-details__text-1">Our range of flow sensors and switches provides reliable and effective measurements for both conductive and non-conductive fluids, as well as gases.</p>
-
-              <!-- accordion-start -->
-                            <button class="accordion">
-                <h4>Product range <i class="fas fa-angle-down"></i>
-                </h4>
+              <h3 class="blog-details__title-1">Heavy-Duty-limit-switches</h3>
+              <p class="blog-details__text-1">Discover unparalleled reliability in the toughest environments with Lucent Industrial Solutions supply of Namco heavy-duty limit switches. With multiple sizes, housing options, lever materials, and actuation methods available, Lucent Industrial Solutions offers a versatile range of NAMCO heavy-duty limit switches to meet the demands of your application. Our NEMA-rated designs ensure suitability for hazardous environments, providing peace of mind in challenging conditions.</p>
+              <p class="pb-4">Explore answers to commonly asked questions about heavy-duty limit switches:</p>
+              <!-- accordion-section -->
+              <button class="accordion">
+              <h4>What is a heavy-duty limit switch ? 
+              </h4>
               </button>
               <div class="panel">
-                <ul class="product_list_items">
-                      <li> <i class="fas fa-angle-double-right"></i> Oval wheel metre</li>
-                      <li> <i class="fas fa-angle-double-right"></i> Coriolis mass flow metre</li>
-                      <li> <i class="fas fa-angle-double-right"></i> Turbine metre</li>
-                      <li> <i class="fas fa-angle-double-right"></i> Vortex metre</li>
-                      <li> <i class="fas fa-angle-double-right"></i> Compact orifice</li>
-                      <li> <i class="fas fa-angle-double-right"></i> Electromagnetic Flowmeter</li>
-                    </ul>
+                <p class="blog-details__text-2">A heavy-duty limit switch is used for position indication and over travel protection in harsh and abrasive environments. Robust features such as die-cast housing, heavy-duty mechanisms, and industrial grade contacts allow a heavy-duty limit switch to withstand hazardous applications with a long mechanical life.</p>
               </div>
-              <!-- accordion-end -->
+              <!-- accordion-section-end -->
 
-              
+              <!-- accordion-section -->
+              <button class="accordion">
+              <h4>When should a heavy-duty limit switch be used ?
+              </h4>
+              </button>
+              <div class="panel">
+               <p class="blog-details__text-2">
+                Heavy-duty limit switches are recommended for applications exposed to harsh environmental factors like extreme temperatures, vibration, shock, and corrosive/hazardous substances. In hazardous environments, NEMA-rated heavy-duty limit switches are essential, offering protection against dust, water, and oil.
+              </p>
+              </div>
+              <!-- accordion-section-end -->
+
+
+              <!-- accordion-section -->
+              <button class="accordion">
+              <h4>What are the types of heavy-duty limit switches ?
+              </h4>
+              </button>
+              <div class="panel">
+                <p class="blog-details__text-2">
+                There are three main types of heavy-duty limit switches: lever actuated, proximity, and reed switches. Lever actuated switches, including cam type and rocker type mechanisms, are particularly popular for heavy-duty applications, providing versatile solutions for various industrial needs.
+              </p>
+              </div>
+              <!-- accordion-section-end -->
             </div>
           </div>
         </div>
@@ -139,7 +154,7 @@ const page = () => {
                                   <h3 class="sidebar__title">Product Catalogue</h3>
                                   <ul class="sidebar__category-list list-unstyled">
                                     <div class="services-details__sidebar-btn-box">
-                                      <a href="/assets/img/flow-measurement.pdf" target="_blank" class="services-details__sidebar-btn thm-btn">View Catalogue <span class="icon-dabble-arrow-right"></span>
+                                      <a href="/assets/img/heavy-duty-limit-switches.pdf" target="_blank" class="services-details__sidebar-btn thm-btn">View Catalogue <span class="icon-dabble-arrow-right"></span>
                                     </a>
                                   </div>
                                 </ul>
@@ -151,7 +166,7 @@ const page = () => {
                       
                     </div>
                   </section>
-  `
+    `
   return (
     <div dangerouslySetInnerHTML={{ __html: pageContent }} >
       
