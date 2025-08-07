@@ -5,6 +5,7 @@ import "@/public/assets/css/responsive.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Script from "next/script";
+import AccordionInitializer from "@/components/Accordtion";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -232,6 +233,7 @@ export default function RootLayout({
           src="/assets/js/theia-sticky-sidebar.min.js" 
           strategy="afterInteractive" 
         />
+        <AccordionInitializer/>
       </body>
     </html>
   );
