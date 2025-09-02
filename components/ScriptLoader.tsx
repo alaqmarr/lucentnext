@@ -1,6 +1,6 @@
 'use client';
 
-const scriptLoader = () => {
+const Scripts = () => {
   const html = `
   <script>
 $('.main--content .fixcontent').theiaStickySidebar({
@@ -66,4 +66,4 @@ accordions.forEach((accordion, index) => {
   );
 };
 
-export default scriptLoader;
+export default Scripts;
