@@ -1,141 +1,159 @@
-'use client';
-
-import Image from 'next/image';
-import Link from 'next/link';
+'use client'
+import React from 'react'
 
 const Header = () => {
-    return (
-        <header className="main-header-four">
-            <div className="main-header-four__top">
-                <div className="container">
-                    <div className="main-header-four__top-inner">
-                        <div className="main-header-four__social">
-                            <a
-                                href="https://www.linkedin.com/company/lucent-is/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <Image
-                                    src="/assets/img/linkedin.png"
-                                    width={25}
-                                    height={25}
-                                    alt="LinkedIn"
-                                />
-                            </a>
-                        </div>
-                        <ul className="list-unstyled main-header-four__contact-list">
-                            <li>
-                                <div className="icon">
-                                    <i className="icon-email"></i>
+    const headerhtml = `
+    <header class="main-header-four">
+                    <div class="main-header-four__top">
+                        <div class="container">
+                            <div class="main-header-four__top-inner">
+                                <div class="main-header-four__social">
+                                    <!-- <a href="#"><i class="icon-facebook"></i></a>
+                                    <a href="#"><i class="icon-instagram"></i></a>
+                                    <a href="#"><i class="icon-Frame"></i></a> -->
+                                    <a href="https://www.linkedin.com/company/lucent-is/" target="_blnk">
+                                        <img src="assets/img/linkedin.png" width="25" alt="">
+                                    </a>
                                 </div>
-                                <div className="text">
-                                    <p>
-                                        <a href="mailto:office@lucent-is.com">office@lucent-is.com</a>
+                                <ul class="list-unstyled main-header-four__contact-list">
+                                    <!-- <li>
+                                        <div class="icon">
+                                            <i class="icon-call"></i>
+                                        </div>
+                                        <div class="text">
+                                            <p><a href="tel:+971505750802">+971 505750802</a>
+                                        </p>
+                                    </div>
+                                </li> -->
+                                <li>
+                                    <div class="icon">
+                                        <i class="icon-email"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p><a href="mailto:office@lucent-is.com">office@lucent-is.com</a>
                                     </p>
                                 </div>
                             </li>
+                            <!-- <li>
+                                <div class="icon">
+                                    <i class="icon-location"></i>
+                                </div>
+                                <div class="text">
+                                    <p>345-01, Schon Business Park, Dubai Investment Park, Dubai, U.A.E</p>
+                                </div>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
             </div>
-
-            <nav className="main-menu main-menu-four">
-                <div className="main-menu-four__wrapper">
-                    <div className="container">
-                        <div className="main-menu-four__wrapper-inner">
-                            <div className="main-menu-four__left">
-                                <div className="main-menu-four__logo">
-                                    <Link href="/">
-                                        <Image
-                                            src="/assets/img/logo.png"
-                                            alt="Logo"
-                                            width={120}
-                                            height={40}
-                                        />
-                                    </Link>
+            <nav class="main-menu main-menu-four">
+                <div class="main-menu-four__wrapper">
+                    <div class="container">
+                        <div class="main-menu-four__wrapper-inner">
+                            <div class="main-menu-four__left">
+                                <div class="main-menu-four__logo">
+                                    <a href="/">
+                                        <img src="/assets/img/logo.png" alt="">
+                                    </a>
                                 </div>
                             </div>
-
-                            <div className="main-menu-four__main-menu-box">
-                                <a href="#" className="mobile-nav__toggler">
-                                    <i className="fa fa-bars"></i>
-                                </a>
-                                <ul className="main-menu__list">
-                                    <li><Link href="/index"><span className="rolling-text">Home</span></Link></li>
-                                    <li><Link href="/about"><span className="rolling-text">About Us</span></Link></li>
-
-                                    <li className="dropdown">
-                                        <a href="#"><span className="rolling-text">Products</span></a>
-                                        <ul>
-                                            <li className="dropdown">
-                                                <a href="#" className="sub_dropdown">Sensors & Transmitters</a>
-                                                <ul>
-                                                    <li><Link href="/pressure-transmitters">Pressure transmitters</Link></li>
-                                                    <li><Link href="/temperature-sensors">Temperature sensors</Link></li>
-                                                    <li><Link href="/speed-sensors">Speed sensors</Link></li>
-                                                    <li><Link href="/flow-measurement">Flow measurement</Link></li>
-                                                    <li><Link href="/position-angle-sensors">Position & Angle sensors</Link></li>
-                                                    <li><Link href="/radar-level-sensors">Radar Level sensors</Link></li>
-                                                </ul>
-                                            </li>
-
-                                            <li className="dropdown">
-                                                <a href="#" className="sub_dropdown">Switches</a>
-                                                <ul>
-                                                    <li><Link href="/pressure-switches">Pressure switches</Link></li>
-                                                    <li><Link href="/temperature-switches">Temperature switches</Link></li>
-                                                    <li><Link href="/flow-switches">Flow switches</Link></li>
-                                                    <li><Link href="/heavy-duty-limit-switches">Heavy Duty limit switches</Link></li>
-                                                </ul>
-                                            </li>
-
-                                            <li className="dropdown">
-                                                <a href="#" className="sub_dropdown">Valves</a>
-                                                <ul>
-                                                    <li><Link href="/solenoid-valves">Solenoid Valves</Link></li>
-                                                    <li><Link href="/industrial-valves">Industrial Valves</Link></li>
-                                                </ul>
-                                            </li>
-
-                                            <li><Link href="/encoders-resolvers">Encoders & Resolvers</Link></li>
-                                            <li><Link href="/counters">Counters</Link></li>
-                                            <li><Link href="/industrial_printers_cutters">Industrial Printers and Cutters</Link></li>
-                                            <li><Link href="/vacuum-contactors">Vacuum Contactors</Link></li>
-                                            <li><Link href="/servo-motors-drives">Servo Motors & Drives</Link></li>
-                                            <li><Link href="/ai-cameras">AI Cameras</Link></li>
-                                            <li><Link href="/engine-powerpack-spares">Engine & Powerpack spares</Link></li>
-                                        </ul>
-                                    </li>
-
-                                    <li className="dropdown">
-                                        <a href="#"><span className="rolling-text">Services</span></a>
-                                        <ul>
-                                            <li><Link href="/maintenance-repairs">Maintenance & repairs</Link></li>
-                                            <li><Link href="/commissioning">Commissioning</Link></li>
-                                            <li><Link href="/data-analytics-predictive-maintenance">Data Analytics & Predictive Maintenance</Link></li>
-                                        </ul>
-                                    </li>
-
+                            <div class="main-menu-four__main-menu-box">
+                                <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                <ul class="main-menu__list">
                                     <li>
-                                        <Link href="/industries"><span className="rolling-text">Industries</span></Link>
+                                        <a href="/"><span class="rolling-text">Home</span></a>
                                     </li>
+                                    <li>
+                                        <a href="/about"><span class="rolling-text">About Us</span></a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#"><span class="rolling-text">Products</span></a>
+                                        <ul>
+                                            <li class="dropdown">
+                                                <a href="#" class="sub_dropdown">Sensors & Transmitters </a>
+                                                <ul>
+                                                    <li><a href="/pressure-transmitters">Pressure transmitters</a></li>
+                                                    <li><a href="/temperature-sensors">Temperature sensors</a></li>
+                                                    <li><a href="/speed-sensors">Speed sensors</a></li>
+                                                    <li><a href="/flow-measurement">Flow measurement</a></li>
+                                                    <li><a href="/position-angle-sensors">Position & Angle sensors</a></li>
+                                                    <li><a href="/radar-level-sensors">Radar Level sensors</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown"><a href="#" class="sub_dropdown">Switches </a>
+                                                <ul>
+                                                  <li>
+                                                      <a href="/pressure-switches">Pressure switches</a>
+                                                  </li> 
+                                                  <li>
+                                                      <a href="/temperature-switches">Temperature switches</a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="/flow-switches">Flow switches</a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="/heavy-duty-limit-switches">Heavy Duty limit switches</a>
+                                                  </li> 
+                                                </ul>
+                                            </li>
+
+                                            <li class="dropdown"><a href="#" class="sub_dropdown">Valves </a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="/solenoid-valves">Solenoid Valves</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/industrial-valves">Industrial Valves</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/encoders-resolvers">Encoders & Resolvers</a></li>
+                                            <li><a href="/counters">Counters</a></li>
+                                            <li><a href="/industrial_printers_cutters">Industrial Printers and Cutters</a></li>
+                                            <li><a href="/vacuum-contactors">Vacuum Contactors</a></li>
+                                            <li><a href="/servo-motors-drives">Servo Motors & Drives</a></li>
+                                            <li><a href="/ai-cameras">AI Cameras</a></li>
+                                            <li><a href="/engine-powerpack-spares">Engine & Powerpack spares</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#"><span class="rolling-text">Services</span></a>
+                                        <ul>
+                                            <li><a href="maintenance-repairs">Maintenance & repairs</a></li>
+                                            <li><a href="commissioning">Commissioning</a></li>
+                                            <li><a href="data-analytics-predictive-maintenance">Data Analytics & Predictive Maintenance</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="industries">
+                                            <span class="rolling-text"> Industries</span>
+                                        </a>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="contact-us">
+                                            <span class="rolling-text">Contact Us</span>
+                                        </a>
+                                    </li> -->
                                 </ul>
                             </div>
-
-                            <div className="main-menu-four__right">
-                                <div className="main-menu-four__btn-box">
-                                    <Link href="/contact-us" className="main-menu-four__btn thm-btn">
-                                        Contact Us <span className="icon-dabble-arrow-right"></span>
-                                    </Link>
-                                </div>
+                            <div class="main-menu-four__right">
+                                <div class="main-menu-four__btn-box">
+                                    <a href="contact-us" class="main-menu-four__btn thm-btn">Contact Us<span
+                                    class="icon-dabble-arrow-right"></span>
+                                </a>
                             </div>
-
                         </div>
                     </div>
                 </div>
-            </nav>
-        </header>
-    );
-};
+            </div>
+        </nav>
+    </header>
+    `
+  return (
+    <div dangerouslySetInnerHTML={{ __html: headerhtml }}>
 
-export default Header;
+    </div>
+  )
+}
+
+export default Header
