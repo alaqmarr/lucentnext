@@ -46,7 +46,7 @@ const Home = () => {
                                 </p>
                                 <div class="main-slider-four__btn-and-call-box">
                                     <div class="main-slider-four__btn-box">
-                                        <a href="pressure-transmitters" class="main-slider-four__btn thm-btn"> Explore products<span class="icon-dabble-arrow-right"></span></a>
+                                        <a href="/products" class="main-slider-four__btn thm-btn"> Explore products<span class="icon-dabble-arrow-right"></span></a>
                                     </div>
                                     <!-- <div class="main-slider-four__call">
                                                 <div class="main-slider-four__call-icon">
@@ -85,7 +85,7 @@ const Home = () => {
                                 </p>
                                 <div class="main-slider-four__btn-and-call-box">
                                     <div class="main-slider-four__btn-box">
-                                        <a href="pressure-transmitters" class="main-slider-four__btn thm-btn"> Explore products<span class="icon-dabble-arrow-right"></span></a>
+                                        <a href="/products" class="main-slider-four__btn thm-btn"> Explore products<span class="icon-dabble-arrow-right"></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +127,7 @@ const Home = () => {
                         Our company is proud to be a sister company to <a href="https://oasis-group.co.in/" target="_blank"> Oasis Group,</a> a renowned business based in Hyderabad, India, known for its expertise and excellence in the field...
                     </p>
                     <div class="services-seven__btn-box">
-                        <a href="about" class="services-seven__btn thm-btn">Read More<span class="icon-dabble-arrow-right"></span></a>
+                        <a href="/about" class="services-seven__btn thm-btn">Read More<span class="icon-dabble-arrow-right"></span></a>
                     </div>
                 </div>
             </div>
@@ -784,37 +784,55 @@ const Home = () => {
                             }}'>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="/assets/img/1.png" alt="">
+                    <img src="/assets/img/brands/1.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="/assets/img/2.png" alt="">
+                    <img src="/assets/img/brands/2.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="/assets/img/3.png" alt="">
+                    <img src="/assets/img/brands/3.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="/assets/img/4.png" alt="">
+                    <img src="/assets/img/brands/4.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="/assets/img/5.png" alt="">
+                    <img src="/assets/img/brands/5.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="/assets/img/6.png" alt="">
+                    <img src="/assets/img/brands/6.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="/assets/img/7.png" alt="">
+                    <img src="/assets/img/brands/7.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="/assets/img/8.png" alt="">
+                    <img src="/assets/img/brands/8.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="/assets/img/9.png" alt="">
+                    <img src="/assets/img/brands/9.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="/assets/img/10.png" alt="">
+                    <img src="/assets/img/brands/10.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="/assets/img/11.png" alt="">
+                    <img src="/assets/img/brands/11.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/img/brands/12.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/img/brands/13.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/img/brands/14.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/img/brands/15.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/img/brands/16.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/img/brands/17.png" alt="">
                 </div>
 
             </div>

@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "name": "AI Cameras",
+        "imagePath": "/assets/img/ai.png",
+        "href": "/ai-cameras"
+    },
+    {
+        "id": 2,
+        "name": "Commissioning",
+        "imagePath": "/assets/img/commissioning.png",
+        "href": "/commissioning"
+    },
+    {
+        "id": 3,
+        "name": "Counters",
+        "imagePath": "/assets/img/counters.jpg",
+        "href": "/counters"
+    },
+    {
+        "id": 4,
+        "name": "Data Analytics Predictive Measures",
+        "imagePath": "/assets/img/productB.jpg",
+        "href": "/data-analytics-predictive-measures"
+    },
+    {
+        "id": 5,
+        "name": "Encoders and Resolvers",
+        "imagePath": "/assets/img/encoders.jpg",
+        "href": "/encoders-resolvers"
+    },
+    {
+        "id": 6,
+        "name": "Engine Powerpack Spares",
+        "imagePath": "/assets/img/eno.jpg",
+        "href": "/engine-powerpack-spares"
+    },
+    {
+        "id": 7,
+        "name": "Flow Measurement",
+        "imagePath": "/assets/img/flow-measurement.jpg",
+        "href": "/flow-measurement"
+    },
+    {
+        "id": 8,
+        "name": "Flow Switches",
+        "imagePath": "/assets/img/flow-switches.jpg",
+        "href": "/flow-switches"
+    },
+    {
+        "id": 9,
+        "name": "Heavy Duty Limit Switches",
+        "imagePath": "/assets/img/heavy-duty-limit-switches.jpg",
+        "href": "/heavy-duty-limit-switches"
+    },
+    {
+        "id": 10,
+        "name": "Industrial Printers Cutters",
+        "imagePath": "/assets/img/industrial-printers-cutters.jpg",
+        "href": "/industrial_printers_cutters"
+    },
+    {
+        "id": 11,
+        "name": "Industrial Valves",
+        "imagePath": "/assets/img/industrial-valves.jpg",
+        "href": "/industrial-valves"
+    },
+    {
+        "id": 12,
+        "name": "Maintainance, Repair",
+        "imagePath": "/assets/img/productB.jpg",
+        "href": "/maintenance-repairs"
+    },
+    {
+        "id": 13,
+        "name": "Position Angle Sensors",
+        "imagePath": "/assets/img/productB.jpg",
+        "href": "/position-angle-sensors"
+    },
+    {
+        "id": 14,
+        "name": "Pressure Switches",
+        "imagePath": "/assets/img/pressure-switches.jpg",
+        "href": "/pressure-switches"
+    },
+    {
+        "id": 15,
+        "name": "Pressure Transmitters",
+        "imagePath": "/assets/img/pressure-transmitters.jpg",
+        "href": "/pressure-transmitters"
+    },
+    {
+        "id": 16,
+        "name": "Radar Level Sensors",
+        "imagePath": "/assets/img/radar-level-sensors.jpg",
+        "href": "/radar-level-sensors"
+    },
+    {
+        "id": 17,
+        "name": "Servo Motors Drives",
+        "imagePath": "/assets/img/servo-moters.png",
+        "href": "/servo-motors-drives"
+    },
+    {
+        "id": 18,
+        "name": "Solenoid Valves",
+        "imagePath": "/assets/img/solenoid-valves.jpg",
+        "href": "/solenoid-valves"
+    },
+    {
+        "id": 19,
+        "name": "Speed Sensors",
+        "imagePath": "/assets/img/speed-sensors.jpg",
+        "href": "/speed-sensors"
+    },
+    {
+        "id": 20,
+        "name": "Temperature Sensors",
+        "imagePath": "/assets/img/temperature-sensors.jpg",
+        "href": "/temperature-sensors"
+    },
+    {
+        "id": 21,
+        "name": "Temperature Switches",
+        "imagePath": "/assets/img/temperature-switches.jpg",
+        "href": "/temperature-switches"
+    },
+    {
+        "id": 22,
+        "name": "Vaccum Contractors",
+        "imagePath": "/assets/img/vaccum-contractors.jpg",
+        "href": "/vaccum-contractors"
+    }
+]

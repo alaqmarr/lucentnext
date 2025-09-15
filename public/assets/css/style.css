@@ -10829,6 +10829,10 @@ html.lenis {
 .services-eight__single:hover .services-eight__icon span {
   transform: scale(.9);
 }
+.services-eight__carousel-box > .grid {
+  display: grid !important;
+}
+
 
 .services-eight__title {
   font-size: 23px;

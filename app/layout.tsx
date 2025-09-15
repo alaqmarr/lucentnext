@@ -4,14 +4,15 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AccordionInitializer from "@/components/Accordtion";
 import Scripts from "@/components/ScriptLoader";
+import HeadSection from "@/components/HeadSection";
 
 export const metadata: Metadata = {
   title: "Lucent Industrial Solutions",
   description: "We are a dynamic instrumentation and control automation company, established in 2024 in the Emirate of Dubai, United Arab Emirates. We specialise in providing cutting-edge solutions in measuring and controlling systems, catering to a wide range of industries.",
   icons: {
-    icon: "//assets/img/favicon.png",
-    shortcut: "//assets/img/favicon.png",
-    apple: "//assets/img/favicon.png",
+    icon: "/assets/img/favicon.png",
+    shortcut: "/assets/img/favicon.png",
+    apple: "/assets/img/favicon.png",
   },
   keywords: [
     "Lucent Industrial Solutions",
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Lucent Industrial Solutions",
     images: [
       {
-        url: "https://lucent-is.com//assets/img/logo.png",
+        url: "https://lucent-is.com/assets/img/favicon.png",
         width: 800,
         height: 600,
         alt: "Lucent Industrial Solutions Logo",
@@ -60,37 +61,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {/* Favicon and Meta */}
-        <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png" />
-        <link rel="canonical" href="https://lucent-is.com" />
-
-        {/* Google Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap"
-          rel="stylesheet"
-        />
-
-        <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/assets/vendors/animate/animate.min.css" />
-        <link rel="stylesheet" href="/assets/vendors/animate/custom-animate.css" />
-        <link rel="stylesheet" href="/assets/vendors/fontawesome/css/all.min.css" />
-        <link rel="stylesheet" href="/assets/vendors/jarallax/jarallax.css" />
-        <link rel="stylesheet" href="/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
-        <link rel="stylesheet" href="/assets/vendors/odometer/odometer.min.css" />
-        <link rel="stylesheet" href="/assets/vendors/swiper/swiper.min.css" />
-        <link rel="stylesheet" href="/assets/vendors/elitecons-icons/style.css" />
-        <link rel="stylesheet" href="/assets/vendors/owl-carousel/owl.carousel.min.css" />
-        <link rel="stylesheet" href="/assets/vendors/owl-carousel/owl.theme.default.min.css" />
-        <link rel="stylesheet" href="/assets/vendors/bootstrap-select/css/bootstrap-select.min.css" />
-        <link rel="stylesheet" href="/assets/vendors/nice-select/nice-select.css" />
-        <link rel="stylesheet" href="/assets/vendors/jquery-ui/jquery-ui.css" />
-        <link rel="stylesheet" href="/assets/css/style.css" />
-        <link rel="stylesheet" href="/assets/css/responsive.css" />
-      </head>
-
+      <HeadSection />
       <body className="custom-cursor">
         <div className="custom-cursor__cursor"></div>
         <div className="custom-cursor__cursor-two"></div>
