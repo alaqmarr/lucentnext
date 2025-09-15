@@ -3,7 +3,7 @@ import React from 'react'
 
 
 const page = async () => {
-    const products = await fetch('http://lucent-is.com/assets/data/products.json').then(res => res.json());
+    const products = await fetch('https://lucent-is.com/assets/data/products.json').then(res => res.json());
   return (
     <div>
       <Products products={products} />
