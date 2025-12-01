@@ -67,7 +67,7 @@ const Header = () => {
                                         <a href="/about"><span class="rolling-text">About Us</span></a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#"><span class="rolling-text">Products</span></a>
+                                        <a href="/products"><span class="rolling-text">Products</span></a>
                                         <ul>
                                             <li class="dropdown">
                                                 <a href="#" class="sub_dropdown">Sensors & Transmitters </a>
@@ -148,12 +148,41 @@ const Header = () => {
             </div>
         </nav>
     </header>
-    `
-  return (
-    <div dangerouslySetInnerHTML={{ __html: headerhtml }}>
-
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+            <div class="logo-box">
+                <a href="/" aria-label="logo image">
+                    <img src="/assets/img/logo.png" width="150" alt="Lucent Industrial Solutions" />
+                </a>
+            </div>
+            <div class="mobile-nav__container"></div>
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="icon-email"></i>
+                    <a href="mailto:office@lucent-is.com">office@lucent-is.com</a>
+                </li>
+                <li>
+                    <i class="icon-call"></i>
+                    <a href="tel:+97142542350">+971 4 254 2350</a>
+                </li>
+            </ul>
+            <div class="mobile-nav__top">
+                <div class="mobile-nav__social">
+                    <a href="https://www.linkedin.com/company/lucent-is/" target="_blank" class="fab fa-linkedin-in"></a>
+                </div>
+            </div>
+        </div>
     </div>
-  )
+    `
+    return (
+        <div dangerouslySetInnerHTML={{ __html: headerhtml }}>
+
+        </div>
+    )
 }
 
 export default Header

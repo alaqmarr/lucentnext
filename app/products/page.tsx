@@ -4,7 +4,7 @@ import React from 'react';
 const Page = async () => {
   const res = await fetch(
     'https://lucent-is.com/assets/data/products.json',
-    { cache: 'no-store' } // <— Avoid static caching
+    { cache: 'no-store' }
   );
 
   if (!res.ok) {
