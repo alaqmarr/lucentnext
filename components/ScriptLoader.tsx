@@ -58,7 +58,6 @@ accordions.forEach((accordion, index) => {
       <script src="/assets/vendors/gsap/ScrollTrigger.js" />
       <script src="/assets/vendors/gsap/SplitText.js" />
       <script src="/assets/vendors/scroll/scrolltop.min.js" />
-      <script src="/assets/vendors/scroll/lenis.min.js" />
       <script src="/assets/js/elitecons.js" />
       <script src="/assets/js/theia-sticky-sidebar.min.js" />
       <div dangerouslySetInnerHTML={{ __html: html }} />
