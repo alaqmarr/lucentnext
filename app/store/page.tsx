@@ -1,9 +1,9 @@
 import StoreTable from './StoreTable'
-import { data } from './data'
+import { data as storeData } from './data'
 
 export default function StorePage() {
     // Filter out unwanted fields from each product
-    const filteredData = data.map(item => ({
+    const filteredData = storeData.map(item => ({
         "Part. Nr.": item["Part. Nr."],
         "Description": item["Description"],
         "ProdFam 1": item["ProdFam 1"],

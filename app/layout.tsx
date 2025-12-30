@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import AccordionInitializer from "@/components/Accordtion";
 import Scripts from "@/components/ScriptLoader";
 import HeadSection from "@/components/HeadSection";
+import "./globals.css";
 import '@/public/assets/vendors/bootstrap/css/bootstrap.min.css';
 import '@/public/assets/vendors/animate/animate.min.css';
 import '@/public/assets/vendors/animate/custom-animate.css';

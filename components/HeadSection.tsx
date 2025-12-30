@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 
 const HeadSection = () => {
@@ -35,28 +34,28 @@ const HeadSection = () => {
             <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon.png"></link>
             <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon.png"></link>
             <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon.png"></link>
-        <link rel="preconnect" href="https://fonts.googleapis.com/" />
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin='anonymous' />
-        <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&amp;display=swap"
-            rel="stylesheet"/>
-            <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap.min.css"/>
-            <link rel="stylesheet" href="/assets/vendors/animate/animate.min.css"/>
-            <link rel="stylesheet" href="/assets/vendors/animate/custom-animate.css"/>
-            <link rel="stylesheet" href="/assets/vendors/fontawesome/css/all.min.css"/>
-            <link rel="stylesheet" href="/assets/vendors/jarallax/jarallax.css"/>
-            <link rel="stylesheet" href="/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css"/>
-            <link rel="stylesheet" href="/assets/vendors/odometer/odometer.min.css"/>
-            <link rel="stylesheet" href="/assets/vendors/swiper/swiper.min.css"/>
-            <link rel="stylesheet" href="/assets/vendors/elitecons-icons/style.css"/>
-            <link rel="stylesheet" href="/assets/vendors/owl-carousel/owl.carousel.min.css"/>
-            <link rel="stylesheet" href="/assets/vendors/owl-carousel/owl.theme.default.min.css"/>
-            <link rel="stylesheet" href="/assets/vendors/bootstrap-select/css/bootstrap-select.min.css"/>
-            <link rel="stylesheet" href="/assets/vendors/nice-select/nice-select.css"/>
-            <link rel="stylesheet" href="/assets/vendors/jquery-ui/jquery-ui.css"/>
-            <link rel="stylesheet" href="/assets/css/style.css"/>
-            <link rel="stylesheet" href="/assets/css/responsive.css"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com/" />
+            <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin='anonymous' />
+            <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&amp;display=swap"
+                rel="stylesheet" />
+            <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap.min.css" />
+            <link rel="stylesheet" href="/assets/vendors/animate/animate.min.css" />
+            <link rel="stylesheet" href="/assets/vendors/animate/custom-animate.css" />
+            <link rel="stylesheet" href="/assets/vendors/fontawesome/css/all.min.css" />
+            <link rel="stylesheet" href="/assets/vendors/jarallax/jarallax.css" />
+            <link rel="stylesheet" href="/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+            <link rel="stylesheet" href="/assets/vendors/odometer/odometer.min.css" />
+            <link rel="stylesheet" href="/assets/vendors/swiper/swiper.min.css" />
+            <link rel="stylesheet" href="/assets/vendors/elitecons-icons/style.css" />
+            <link rel="stylesheet" href="/assets/vendors/owl-carousel/owl.carousel.min.css" />
+            <link rel="stylesheet" href="/assets/vendors/owl-carousel/owl.theme.default.min.css" />
+            <link rel="stylesheet" href="/assets/vendors/bootstrap-select/css/bootstrap-select.min.css" />
+            <link rel="stylesheet" href="/assets/vendors/nice-select/nice-select.css" />
+            <link rel="stylesheet" href="/assets/vendors/jquery-ui/jquery-ui.css" />
+            <link rel="stylesheet" href="/assets/css/style.css" />
+            <link rel="stylesheet" href="/assets/css/responsive.css" />
         </head>
-  )
+    )
 }
 
 export default HeadSection
