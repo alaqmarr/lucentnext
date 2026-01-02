@@ -6,12 +6,12 @@ export default function StorePage() {
     const filteredData = storeData.map(item => ({
         "Part. Nr.": item["Part. Nr."],
         "Description": item["Description"],
-        "ProdFam 1": item["ProdFam 1"],
-        "ProdFam 2": item["ProdFam 2"],
+        "Product Family": item["Product Family"],
         "Make": item["Make"],
-        "Product Group": item["Product Group"],
+        "List price": item["List price"],
         "Weight KG": item["Weight KG"],
-        "Origin": item["Origin"]
+        "Origin": item["Origin"],
+        "Minimum order quantity": item["Minimum order quantity"]
     }))
 
     return (

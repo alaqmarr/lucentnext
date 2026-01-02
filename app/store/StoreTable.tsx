@@ -4,12 +4,12 @@ import React, { useState, useMemo, useEffect } from 'react'
 interface Product {
   "Part. Nr.": string;
   "Description": string;
-  "ProdFam 1": string;
-  "ProdFam 2": string;
+  "Product Family": string;
   "Make": string;
-  "Product Group": number;
+  "List price": string;
   "Weight KG": number;
   "Origin": string;
+  "Minimum order quantity": number;
 }
 
 const ITEMS_PER_PAGE = 50;
@@ -49,10 +49,8 @@ export default function StoreTable({ data }: { data: Product[] }) {
     return data.filter(item =>
       String(item["Part. Nr."] ?? '').toLowerCase().includes(searchLower) ||
       String(item["Description"] ?? '').toLowerCase().includes(searchLower) ||
-      String(item["ProdFam 1"] ?? '').toLowerCase().includes(searchLower) ||
-      String(item["ProdFam 2"] ?? '').toLowerCase().includes(searchLower) ||
+      String(item["Product Family"] ?? '').toLowerCase().includes(searchLower) ||
       String(item["Make"] ?? '').toLowerCase().includes(searchLower) ||
-      String(item["Product Group"] ?? '').toLowerCase().includes(searchLower) ||
       String(item["Origin"] ?? '').toLowerCase().includes(searchLower)
     )
   }, [data, debouncedSearch])
@@ -390,12 +388,12 @@ export default function StoreTable({ data }: { data: Product[] }) {
             <tr>
               <th>Part Nr.</th>
               <th>Description</th>
-              <th>Product Family 1</th>
-              <th>Product Family 2</th>
+              <th>Product Family</th>
               <th>Make</th>
-              <th>Product Group</th>
+              <th>List Price</th>
               <th>Weight (KG)</th>
               <th>Origin</th>
+              <th>Min Order Qty</th>
             </tr>
           </thead>
           <tbody>
@@ -404,12 +402,12 @@ export default function StoreTable({ data }: { data: Product[] }) {
                 <tr key={`${item["Part. Nr."]}-${index}`}>
                   <td className="part-nr">{item["Part. Nr."]}</td>
                   <td>{item["Description"]}</td>
-                  <td>{item["ProdFam 1"]}</td>
-                  <td>{item["ProdFam 2"]}</td>
+                  <td>{item["Product Family"]}</td>
                   <td>{item["Make"]}</td>
-                  <td style={{ textAlign: 'center' }}>{item["Product Group"]}</td>
+                  <td>{item["List price"]}</td>
                   <td style={{ textAlign: 'right' }}>{item["Weight KG"]}</td>
                   <td style={{ textAlign: 'center' }}><span className="origin-badge">{item["Origin"]}</span></td>
+                  <td style={{ textAlign: 'center' }}>{item["Minimum order quantity"]}</td>
                 </tr>
               ))
             ) : (
@@ -440,16 +438,20 @@ export default function StoreTable({ data }: { data: Product[] }) {
                   <span className="store-card-value">{item["Make"]}</span>
                 </div>
                 <div className="store-card-detail">
+                  <span className="store-card-label">Product Family</span>
+                  <span className="store-card-value">{item["Product Family"]}</span>
+                </div>
+                <div className="store-card-detail">
+                  <span className="store-card-label">List Price</span>
+                  <span className="store-card-value">{item["List price"]}</span>
+                </div>
+                <div className="store-card-detail">
                   <span className="store-card-label">Weight</span>
                   <span className="store-card-value">{item["Weight KG"]} KG</span>
                 </div>
                 <div className="store-card-detail">
-                  <span className="store-card-label">Family 1</span>
-                  <span className="store-card-value">{item["ProdFam 1"]}</span>
-                </div>
-                <div className="store-card-detail">
-                  <span className="store-card-label">Family 2</span>
-                  <span className="store-card-value">{item["ProdFam 2"]}</span>
+                  <span className="store-card-label">Min Order</span>
+                  <span className="store-card-value">{item["Minimum order quantity"]}</span>
                 </div>
               </div>
             </div>
