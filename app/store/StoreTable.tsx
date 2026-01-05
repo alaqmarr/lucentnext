@@ -89,6 +89,44 @@ export default function StoreTable({ data }: { data: Product[] }) {
     return pages
   }
 
+  // Generate mailto link for price inquiry
+  const generateMailtoLink = (item: Product) => {
+    const subject = encodeURIComponent(`Price Inquiry: ${item["Part. Nr."]} - ${item["Description"]}`)
+    const body = encodeURIComponent(
+      `Dear Lucent Industrial Solutions Team,
+
+I would like to request pricing information for the following product:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PRODUCT DETAILS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Part Number: ${item["Part. Nr."]}
+Description: ${item["Description"]}
+Product Family: ${item["Product Family"]}
+Manufacturer: ${item["Make"]}
+Weight: ${item["Weight KG"]} KG
+Origin: ${item["Origin"]}
+Minimum Order Quantity: ${item["Minimum order quantity"]}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Please provide:
+• Unit price
+• Availability / Lead time
+• Bulk pricing (if applicable)
+
+Thank you for your assistance.
+
+Best regards,
+[Your Name]
+[Your Company]
+[Your Contact Number]
+`
+    )
+    return `mailto:office@lucent-is.com?subject=${subject}&body=${body}`
+  }
+
   const styles = `
     /* Disable Lenis smooth scroll on store page */
     html.lenis, html.lenis body {
@@ -186,6 +224,33 @@ export default function StoreTable({ data }: { data: Product[] }) {
       border-radius: 4px;
       font-size: 12px;
       font-weight: 500;
+    }
+    
+    /* Price Link Styles */
+    .price-link {
+      color: #1a73e8;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: linear-gradient(135deg, #e8f4fd 0%, #f0f7ff 100%);
+      border-radius: 6px;
+      border: 1px solid #c2e0ff;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    
+    .price-link:hover {
+      background: linear-gradient(135deg, #1a73e8 0%, #1557b0 100%);
+      color: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 3px 8px rgba(26, 115, 232, 0.3);
+    }
+    
+    .price-link i {
+      font-size: 12px;
     }
     
     /* Mobile Card Styles */
@@ -404,7 +469,7 @@ export default function StoreTable({ data }: { data: Product[] }) {
                   <td>{item["Description"]}</td>
                   <td>{item["Product Family"]}</td>
                   <td>{item["Make"]}</td>
-                  <td>{item["List price"]}</td>
+                  <td><a href={generateMailtoLink(item)} className="price-link"><i className="fa fa-envelope"></i> {item["List price"]}</a></td>
                   <td style={{ textAlign: 'right' }}>{item["Weight KG"]}</td>
                   <td style={{ textAlign: 'center' }}><span className="origin-badge">{item["Origin"]}</span></td>
                   <td style={{ textAlign: 'center' }}>{item["Minimum order quantity"]}</td>
@@ -443,7 +508,7 @@ export default function StoreTable({ data }: { data: Product[] }) {
                 </div>
                 <div className="store-card-detail">
                   <span className="store-card-label">List Price</span>
-                  <span className="store-card-value">{item["List price"]}</span>
+                  <a href={generateMailtoLink(item)} className="store-card-value price-link"><i className="fa fa-envelope"></i> {item["List price"]}</a>
                 </div>
                 <div className="store-card-detail">
                   <span className="store-card-label">Weight</span>
@@ -461,43 +526,46 @@ export default function StoreTable({ data }: { data: Product[] }) {
             <i className="fa fa-search store-empty-icon" style={{ display: 'block' }}></i>
             No products found matching your search
           </div>
-        )}
-      </div>
+        )
+        }
+      </div >
 
       {/* Pagination */}
-      {totalPages > 1 && (
-        <div className="store-pagination">
-          <button
-            onClick={() => handlePageChange(currentPage - 1)}
-            disabled={currentPage === 1}
-            className="store-pagination-btn"
-          >
-            <i className="fa fa-chevron-left"></i> {!isMobile && 'Prev'}
-          </button>
+      {
+        totalPages > 1 && (
+          <div className="store-pagination">
+            <button
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+              className="store-pagination-btn"
+            >
+              <i className="fa fa-chevron-left"></i> {!isMobile && 'Prev'}
+            </button>
 
-          {getPageNumbers().map((page, idx) => (
-            typeof page === 'number' ? (
-              <button
-                key={idx}
-                onClick={() => handlePageChange(page)}
-                className={`store-pagination-num ${currentPage === page ? 'active' : ''}`}
-              >
-                {page}
-              </button>
-            ) : (
-              <span key={idx} className="store-pagination-ellipsis">...</span>
-            )
-          ))}
+            {getPageNumbers().map((page, idx) => (
+              typeof page === 'number' ? (
+                <button
+                  key={idx}
+                  onClick={() => handlePageChange(page)}
+                  className={`store-pagination-num ${currentPage === page ? 'active' : ''}`}
+                >
+                  {page}
+                </button>
+              ) : (
+                <span key={idx} className="store-pagination-ellipsis">...</span>
+              )
+            ))}
 
-          <button
-            onClick={() => handlePageChange(currentPage + 1)}
-            disabled={currentPage === totalPages}
-            className="store-pagination-btn"
-          >
-            {!isMobile && 'Next'} <i className="fa fa-chevron-right"></i>
-          </button>
-        </div>
-      )}
-    </div>
+            <button
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+              className="store-pagination-btn"
+            >
+              {!isMobile && 'Next'} <i className="fa fa-chevron-right"></i>
+            </button>
+          </div>
+        )
+      }
+    </div >
   )
 }
